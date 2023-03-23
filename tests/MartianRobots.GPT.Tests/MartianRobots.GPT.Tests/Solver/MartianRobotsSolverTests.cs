@@ -1,5 +1,5 @@
 ﻿using Xunit;
-using MartianRobots;
+using MartianRobots.GPT.Solver;
 
 namespace MartianRobots.GPT.Tests.Solver
 {

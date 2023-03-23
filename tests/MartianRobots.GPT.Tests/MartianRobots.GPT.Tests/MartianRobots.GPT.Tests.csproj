@@ -16,4 +16,8 @@
     <Folder Include="Solver\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\MartianRobots.GPT\MartianRobots.GPT.csproj" />
+  </ItemGroup>
+
 </Project>
