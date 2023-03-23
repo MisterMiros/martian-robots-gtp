@@ -40,7 +40,27 @@ namespace MartianRobots.GPT.Tests.Solver
                 Assert.Equal(expectedOutput, result);
             }
 
-            // Add more test methods for different scenarios as needed.
+            [Fact]
+            public void TestRobotMoveOffGrid()
+            {
+                string input = "5 3\r\n1 1 N\r\nFFFFF";
+                string expectedOutput = "1 3 N LOST";
+
+                string result = MartianRobotsSolver.Solve(input);
+
+                Assert.Equal(expectedOutput, result);
+            }
+
+            [Fact]
+            public void TestRobotMoveOffGridAndLeaveScent()
+            {
+                string input = "5 3\r\n1 1 N\r\nFFFFF\r\n1 1 N\r\nFFFFF";
+                string expectedOutput = "1 3 N LOST\n1 3 N";
+
+                string result = MartianRobotsSolver.Solve(input);
+
+                Assert.Equal(expectedOutput, result);
+            }
         }
     }
 
