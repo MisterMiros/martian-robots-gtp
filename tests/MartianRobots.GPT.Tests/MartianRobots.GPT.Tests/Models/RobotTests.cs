@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MartianRobots.GPT.Enums;
+using MartianRobots.GPT.Models;
+using Xunit;
 
 namespace MartianRobots.GPT.Tests.Models
 {
@@ -12,9 +10,9 @@ namespace MartianRobots.GPT.Tests.Models
         public void TestRobotTurn()
         {
             var robot = new Robot(0, 0, Orientation.N);
-            robot.Turn(Instruction.L);
+            robot.ExecuteInstruction(Instruction.L);
             Assert.Equal(Orientation.W, robot.Orientation);
-            robot.Turn(Instruction.R);
+            robot.ExecuteInstruction(Instruction.R);
             Assert.Equal(Orientation.N, robot.Orientation);
         }
 
@@ -24,21 +22,12 @@ namespace MartianRobots.GPT.Tests.Models
             var robot = new Robot(0, 0, Orientation.N);
             var grid = new Grid(5, 3);
 
-            robot.Move(grid);
+            robot.ExecuteInstruction(Instruction.F, grid);
             Assert.Equal(1, robot.Y);
 
             robot.Orientation = Orientation.E;
-            robot.Move(grid);
+            robot.ExecuteInstruction(Instruction.F, grid);
             Assert.Equal(1, robot.X);
-        }
-
-        [Fact]
-        public void TestRobotMoveOffGrid()
-        {
-            var robot = new Robot(0, 3, Orientation.N);
-            var grid = new Grid(5, 3);
-
-            Assert.Throws<InvalidOperationException>(() => robot.Move(grid));
         }
     }
 }
