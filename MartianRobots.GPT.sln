@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MartianRobots.GPT", "MartianRobots.GPT\MartianRobots.GPT.csproj", "{6B37F9C6-6B8E-496D-9DBF-C9C8B56E36EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B37F9C6-6B8E-496D-9DBF-C9C8B56E36EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B37F9C6-6B8E-496D-9DBF-C9C8B56E36EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B37F9C6-6B8E-496D-9DBF-C9C8B56E36EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B37F9C6-6B8E-496D-9DBF-C9C8B56E36EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C87D9DC-AA91-45A7-A17E-03AD09CC77F5}
+	EndGlobalSection
+EndGlobal
