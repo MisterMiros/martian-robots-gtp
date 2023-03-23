@@ -6,14 +6,14 @@ namespace MartianRobots.GPT.Tests.Models
     public class GridTests
     {
         [Fact]
-        public void TestGridIsPositionValid()
+        public void TestGridIsWithinBounds()
         {
             var grid = new Grid(5, 3);
 
-            Assert.True(grid.IsPositionValid(0, 0));
-            Assert.True(grid.IsPositionValid(5, 3));
-            Assert.False(grid.IsPositionValid(6, 3));
-            Assert.False(grid.IsPositionValid(5, 4));
+            Assert.True(grid.IsWithinBounds(0, 0));
+            Assert.True(grid.IsWithinBounds(5, 3));
+            Assert.False(grid.IsWithinBounds(6, 3));
+            Assert.False(grid.IsWithinBounds(5, 4));
         }
 
         [Fact]
