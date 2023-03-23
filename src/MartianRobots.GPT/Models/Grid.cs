@@ -1,4 +1,4 @@
-﻿namespace MartianRobots.GPT
+﻿namespace MartianRobots.GPT.Models
 {
     public class Grid
     {

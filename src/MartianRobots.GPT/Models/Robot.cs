@@ -1,4 +1,6 @@
-﻿namespace MartianRobots.GPT
+﻿using MartianRobots.GPT.Enums;
+
+namespace MartianRobots.GPT.Models
 {
     public class Robot
     {

@@ -1,4 +1,6 @@
 ﻿
+using MartianRobots.GPT.Solver;
+
 namespace MartianRobots.GPT
 {
     public class Program

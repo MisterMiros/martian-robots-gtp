@@ -1,4 +1,7 @@
-﻿namespace MartianRobots.GPT
+﻿using MartianRobots.GPT.Enums;
+using MartianRobots.GPT.Models;
+
+namespace MartianRobots.GPT.Solver
 {
     public static class MartianRobotsSolver
     {
